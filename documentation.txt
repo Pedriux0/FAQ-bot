@@ -1,0 +1,56 @@
+FAQ Bot Plus Project Report
+By Juan Naranjo | February 20, 2025
+
+Link of the Bot:
+https://discord.com/oauth2/authorize?client_id=1335772319309758474&permissions=274877908992&integration_type=0&scope=bot
+
+What’s This Project About?
+Meet FAQ Bot Plus—a smart chatbot designed to answer questions using a mix of pre-set answers and clever language processing. Whether you’re chatting in a Python terminal or on Discord, this bot adapts to your needs. It uses pattern matching to recognize common questions and spaCy’s language smarts to handle curveballs it hasn’t seen before.
+
+Key Features
+1. Instant Answers with Smart Matching
+The bot checks your questions against a list of pre-written FAQs. It ignores typos, capitalization, and punctuation
+
+2. No Match? No Problem.
+If your question stumps the bot, it doesn’t just give up. Instead, it:
+
+Shares random fun facts (like “Octopuses have three hearts!”).
+
+Sends Google Maps links for location questions (“Where’s Tokyo?” → maps.link/tokyo).
+
+Pulls Wikipedia info for famous people, places, or organizations.
+
+3. Discord Ready
+The bot works seamlessly on Discord, responding to messages just like it does in a Python shell. Say “hello” or ask about the weather—it’s got you covered.
+
+How It Works Under the Hood
+Loading FAQs: Questions and answers are stored in a file, which the bot reads and organizes for quick access.
+
+Cleaning Up Input: It simplifies your messages by removing punctuation and lowercase-ing everything (so “HEY!!” becomes “hey”).
+
+Matching Questions: Uses fuzzy logic and regex patterns to guess what you’re asking, even if your wording isn’t perfect.
+
+Handling Unknowns: When stuck, spaCy helps analyze your question. Ask about a place? You’ll get a map link. Mention a celebrity? It’ll fetch a Wikipedia summary.
+
+Testing & Behavior
+Sample Interactions:
+
+You: “What’s the fourth dimension?”
+Bot: Explains theoretical physics (using the pre-set FAQ answer).
+
+You: “Tell me something cool.”
+Bot: Shares a random fact (e.g., “Honey never spoils!”).
+
+You: “Where’s the Eiffel Tower?”
+Bot: Sends a Google Maps link to Paris.
+
+Consistency Across Platforms: Whether on Discord or Python, the bot behaves the same way—just the interface changes.
+
+
+References
+
+spaCy Docs: spacy.io/docs
+
+Discord API Guide: discordpy.readthedocs.io
+
+Python Regex Help: docs.python.org/3/library/re.html
