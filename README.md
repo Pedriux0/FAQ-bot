@@ -10,6 +10,9 @@ The project consists of three phases:
 2. **Phase 2**: Advanced FAQ bot with spaCy integration for linguistic analysis and fallback responses.
 3. **Phase 3**: A Discord bot implementation to make it interactive.
 
+##Link of the bot for discord
+https://discord.com/oauth2/authorize?client_id=1335772319309758474&permissions=274877908992&integration_type=0&scope=bot
+
 ## Features
 
 - **Fuzzy Regular Expression Matching**: The bot matches user queries with predefined question-answer pairs using fuzzy regex, allowing for some typo tolerance.
